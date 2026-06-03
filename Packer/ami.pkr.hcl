@@ -22,7 +22,7 @@ source "amazon-ebs" "ubuntu" {
   tags = {
     Name        = "${var.ami_name_prefix}-${local.build_timestamp}"
     ImageRole   = "bagisto"
-    Project     = "devops-bootcamp"
+    Project     = var.project_name
     Provisioner = "packer"
   }
 }
@@ -36,6 +36,6 @@ build {
       "PHP_VERSION=${var.php_version}",
       "AWS_REGION=${var.aws_region}",
     ]
-    script = "${path.root}/scripts/run.sh"
+    script = "${path.root}/script/run.sh"
   }
 }

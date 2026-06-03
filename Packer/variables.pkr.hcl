@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "aws_profile" {
   description = "AWS CLI profile name used by Packer."
   type        = string
-  default     = "ecommerce"
+  default     = "ecommerse"
 }
 
 variable "instance_type" {
@@ -20,6 +20,12 @@ variable "ami_name_prefix" {
   description = "Prefix for the generated AMI name."
   type        = string
   default     = "devops-bootcamp-bagisto"
+}
+
+variable "project_name" {
+  description = "Project name tag for the generated AMI."
+  type        = string
+  default     = "bagisto"
 }
 
 variable "ssh_username" {
@@ -45,3 +51,4 @@ variable "php_version" {
   type        = string
   default     = "8.3"
 }
+
