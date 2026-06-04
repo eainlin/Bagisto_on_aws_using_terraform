@@ -44,8 +44,6 @@ The project also includes an Nginx configuration for serving Bagisto and a Packe
 - Terraform installed (recommended version compatible with modules)
 - Packer installed for AMI creation
 - AWS CLI configured with valid credentials
-- `Install-Prerequisites.md` may include package prerequisites and local setup guidance
-
 
 ## Packer AMI Build
 
@@ -95,6 +93,7 @@ sudo chmod -R 755 /var/www/html/bagisto/public
 ```
 
 ## Reference
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
 - Bagisto installation guide: https://devdocs.bagisto.com/getting-started/installation.html
 
 ## Notes
